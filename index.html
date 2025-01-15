@@ -25,18 +25,16 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            position: relative;
-            left: -10%; 
         }
         h1 {
             color: #4CAF50;
         }
         h2 {
             color: #4CAF50;
-            font-size: 2.6em; 
+            font-size: 2.6em; /* Increased by 30% */
         }
         p, a {
-            font-size: 1.56em;
+            font-size: 1.56em; /* Increased by 30% */
         }
         .team {
             display: flex;
@@ -63,16 +61,25 @@
             margin-top: 20px;
             background-color: #333;
             color: white;
-            font-size: 1.56em;
+            font-size: 1.56em; /* Increased by 30% */
         }
         @media screen and (max-width: 768px) {
             .team-member {
                 flex: 1 1 calc(50% - 20px);
             }
+            .container {
+                padding: 15px;
+            }
         }
         @media screen and (max-width: 480px) {
             .team-member {
                 flex: 1 1 100%;
+            }
+            h2 {
+                font-size: 2em; /* Adjusted for smaller screens */
+            }
+            p, a {
+                font-size: 1.2em; /* Adjusted for smaller screens */
             }
         }
     </style>
